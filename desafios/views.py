@@ -1,14 +1,17 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseNotFound
 
-def domingo(request):
-    return HttpResponse("Ler Livro sobre Django")
-
-def segunda(request):
-    return HttpResponse("Assistir Série Breaking Bad")
-
-def terca(request):
-    return HttpResponse("Estudar programação Python")
+def desafio_semana(request, dia):
+    desafio = ''
+    if dia == 'domingo':
+        desafio = 'Ler Livro sobre Django'
+    elif dia == 'segunda':
+        desafio = 'Assistir Série Breaking Bad'
+    elif dia == 'terça':
+        desafio = 'Estudar programação Python'
+    else:
+        return HttpResponseNotFound("Não há desafio para este dia informado")
+    return HttpResponse(desafio)
 
 
 
