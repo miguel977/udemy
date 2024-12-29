@@ -24,7 +24,8 @@ def desafio_semana(request, dia):
     try:
         desafio = desafios_dia_semana[dia]
         return render(request,"desafios/desafio.html", {
-            'desafio': desafio
+            'desafio': desafio,
+            'dia':dia
         })
     except:
         return HttpResponseNotFound("Para esse parâmetro não há desafio")
