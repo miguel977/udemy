@@ -12,6 +12,11 @@ desafios_dia_semana = {
     'sexta': ' fazer um projeto voluntário',
     'sábado': ' Ir a Igreja'
 } 
+def index(request):
+    dias = list(desafios_dia_semana.keys())
+    return render(request, "desafios/index.html", {
+        'dias':dias
+    })
 def desafio_semana_numero(request, dia):
     dias = list(desafios_dia_semana.keys())
     if dia > len(dias) or dia == 0: 
