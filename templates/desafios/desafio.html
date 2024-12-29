@@ -8,6 +8,10 @@
 <body>
     <h1 style="text-align: center;">Desafio de {{dia|title}}</h1>
     <hr>
-    {{desafio}}
+    {% if desafio is not none %}
+    <h2>{{desafio}}</h2>
+    {% else %}
+        <p>Não há desafios nesse dia</p>
+    {%endif %}
 </body>
 </html>

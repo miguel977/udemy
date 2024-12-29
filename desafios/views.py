@@ -9,7 +9,7 @@ desafios_dia_semana = {
     'terça': ' Estudar programação Python',
     'quarta': ' Fazer um curso de Design Gráfico',
     'quinta': ' Praticar um Esporte',
-    'sexta': ' fazer um projeto voluntário',
+    'sexta': None,
     'sábado': ' Ir a Igreja'
 } 
 def index(request):

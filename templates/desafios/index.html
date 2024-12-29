@@ -9,7 +9,7 @@
     <ul>
         {% for dia in dias%}
         <li>
-            <a  href="">{{dia|title}}</a>
+            <a  href="{% urls 'desafio semanal' dia=dia %}">{{dia|title}}</a>
         </li>
         {% endfor %%}
     </ul>
