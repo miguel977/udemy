@@ -1,18 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Desafio da Semana</title>
-</head>
-<body>
-    <ul>
-        {% for dia in dias%}
+{% extends 'base.html' %}
+
+{% block title %}
+    Desafios da semana
+{% endblock %}
+
+{% block content %}
+    {% for dia in dias%}
         <li>
             <a  href="{% urls 'desafio semanal' dia=dia %}">{{dia|title}}</a>
         </li>
-        {% endfor %%}
-    </ul>
+    {% endfor %%}
+{% endblock %}
+
     
-</body>
-</html>
+    
