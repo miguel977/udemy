@@ -5,11 +5,14 @@
 {% endblock %}
 
 {% block content %}
-    {% for dia in dias%}
+{% include "./includes/header.html" %}
+<ul>
+    {% for dia in dias %}
         <li>
-            <a  href="{% urls 'desafio semanal' dia=dia %}">{{dia|title}}</a>
+            <a href="{% url 'desafio_semanal' dia=dia %}">{{dia|title}}</a>
         </li>
-    {% endfor %%}
+    {% endfor %}
+</ul>
 {% endblock %}
 
     
