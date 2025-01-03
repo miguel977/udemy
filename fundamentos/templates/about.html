@@ -6,7 +6,12 @@
     <title>about</title>
 </head>
 <body>
-    <h2>about</h2>
+    <h2>about </h2>
+    <ol>
+        {% for fruta in frutas %}
+            <li>{{fruta}}</li>
+        {% endfor %}
+    </ol>
     <hr>
     <p>Acesse a página <a href="/">Home</a></p>
 </body>
