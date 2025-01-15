@@ -3,14 +3,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     min-height: 100vh;
-    display: flex;
+    display: grid;
+    place-content: center;
     flex-flow: column;
     font-size: 3rem;
     background-color: black;
     color: whitesmoke;
 }
+
 h2, p {
     text-align: center;
 }
