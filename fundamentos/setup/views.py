@@ -7,7 +7,7 @@ def homepage(request):
         'idade': 30,
         'cidade':'São Paulo'
     }
-    return render(request, 'home.html', {'nome': nome, 'pessoa':pessoa})
+    return render(request, 'home.html')
 
 def about(request):
     frutas = ['Maçã', 'Banana', 'Laranja', 'Uva']

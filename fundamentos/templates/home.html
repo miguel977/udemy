@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% comment %} <link rel="stylesheet" href="{% static 'css/style.css' %}"> {% endcomment %}
 </head>
 <body>
     <h2>Home {{nome}}</h2>
     <p>Acesse a página <a href="/about">About</a></p>
     <hr>
-    <h3>Informações da pessoa: </h3>
-    <p>Nome: {{pessoa.nome}}</p>
-    <p>idade: {{pessoa.idade}}</p>
-    <p>cidade: {{pessoa.cidade}}</p>
 </body>
 </html>

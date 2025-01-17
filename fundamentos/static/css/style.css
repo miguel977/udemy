@@ -7,8 +7,6 @@
 body {
     min-height: 100vh;
     display: grid;
-    place-content: center;
-    flex-flow: column;
     font-size: 3rem;
     background-color: black;
     color: whitesmoke;
